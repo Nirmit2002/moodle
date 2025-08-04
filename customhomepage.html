@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkarLabs - Revolutionize Learning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/moodle/assets/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Parkar<span>Labs</span></a>
+                <a href="/moodle/login/index.php" class="login-btn">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <h1 class="hero-title">Revolutionize Learning with ParkarLabs</h1>
+                    <p class="hero-subtitle">Log in to access hands-on labs, explore real-world scenarios, and build practical skills. Everything you need—right in your browser.</p>
+                </div>
+                <div class="hero-right">
+                    <div class="classroom-image">
+                        <img src="/moodle/assets/images/representation-user-experience-interface-design.jpg" loading="lazy" alt="Innovative Futuristic Classroom">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lab Section -->
+    <section class="lab-section">
+        <div class="container">
+            <div class="lab-content">
+                <div class="lab-left">
+                    <h2 class="lab-title">Your Personal Lab Environment</h2>
+                    <p class="lab-description">ParkarLabs provides a secure, cloud-based personal lab environment where you can practice and perfect your technical skills. Our platform is designed for learners and professionals who need hands-on experience with real-world scenarios.</p>
+                    
+                    <ul class="lab-features">
+                        <li class="lab-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Create and manage virtual machines with just a few clicks</span>
+                        </li>
+                        <li class="lab-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Access pre-configured environments for various technologies</span>
+                        </li>
+                        <li class="lab-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Complete hands-on tasks and projects in a safe, isolated environment</span>
+                        </li>
+                        <li class="lab-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Track your progress and save your work for future sessions</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="hero-buttons">
+                        <a href="https://learning.telemetrics.tech/login/index.php" class="btn btn-primary">Start Your Lab</a>
+                        <a href="#" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="lab-right">
+                    <div class="lab-image-container">
+                        <img class="lab-image" src="/moodle/assets/images/innovative-futuristic-classroom-students.jpg" loading="lazy" alt="Virtual Machine Lab Environment">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Life at Parkar Section -->
+    <section class="life-at-parkar">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Life at Parkar</h2>
+                <p class="section-subtitle">Experience the vibrant culture and innovative environment that makes ParkarLabs a great place to work and learn.</p>
+            </div>
+        </div>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="/moodle/assets/images/DSC_7292.JPG" loading="lazy" alt="Office Space">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Modern Workspace</h3>
+                    <p class="gallery-description">Our state-of-the-art facilities designed for creativity and collaboration</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="/moodle/assets/images/DSC_7104.JPG" loading="lazy" alt="Team Collaboration">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Team Collaboration</h3>
+                    <p class="gallery-description">Working together to solve complex challenges</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="/moodle/assets/images/DSC_7009.JPG" loading="lazy" alt="Innovation Lab">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Innovation Lab</h3>
+                    <p class="gallery-description">Where ideas come to life through cutting-edge technology</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="/moodle/assets/images/DSC_7050.JPG" loading="lazy" alt="Team Events">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Team Events</h3>
+                    <p class="gallery-description">Building connections and celebrating achievements together</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <button class="chatbot-toggle" onclick="toggleChatbot()">
+            V
+        </button>
+        
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <div class="chatbot-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="chatbot-info">
+                    <h3>Vera</h3>
+                    <p>Virtual Assistant</p>
+                </div>
+                <button class="chatbot-close" onclick="toggleChatbot()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot">
+                    Hello! I'm Vera, your virtual assistant. How can I help you with ParkarLabs today?
+                </div>
+            </div>
+            
+            <div class="chatbot-input-container">
+                <input type="text" class="chatbot-input" id="chatbotInput" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+                <button class="chatbot-send" onclick="sendMessage()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">Parkar<span>Labs</span></a>
+                <p class="copyright">&copy; 2025 ParkarLabs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/moodle/assets/script.js"></script>
+</body>
+</html>
